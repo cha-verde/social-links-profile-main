@@ -39,7 +39,7 @@ body{
 
 .card{
     background-color: var(--gray800);
-    padding: 3em;
+    padding: 2em;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
@@ -90,4 +90,42 @@ body{
     text-align: center;
     border-radius: 0.5em;
     font-weight: bold;
+}
+
+@keyframes hoverButtonAnimation{
+    from {
+        background-color: var(--gray700);
+        color: white;
+    }
+    to {
+        background-color: var(--green);
+        color: black;
+    }
+}
+
+.social-link:hover{
+    animation-name: hoverButtonAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.attribution{
+    margin-top: 1em;
+    font-weight: lighter;
+    font-size: 0.75em;
+}
+
+@keyframes hoverLinkAnimation{
+    from {
+        color: white;
+    }
+    to {
+        color: var(--green);
+    }
+}
+
+.attribution a:hover{
+    animation-name: hoverLinkAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
