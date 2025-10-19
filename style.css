@@ -92,6 +92,10 @@ body{
     font-weight: bold;
 }
 
+.social-link:focus{
+    outline: none;
+}
+
 @keyframes hoverButtonAnimation{
     from {
         background-color: var(--gray700);
@@ -103,7 +107,7 @@ body{
     }
 }
 
-.social-link:hover{
+.social-link:hover, .social-link:focus{
     animation-name: hoverButtonAnimation;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
